@@ -1,0 +1,8 @@
+public with sharing class CreateContactController {
+    
+    @AuraEnabled
+    public static Contact createContact(Contact con){
+        insert con;
+        return con;
+    }
+}
